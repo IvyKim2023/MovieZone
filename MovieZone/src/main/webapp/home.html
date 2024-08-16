@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Movie Recommendation">
+  <meta name="author" content="Ivy Jin">
+  <title>MovieZone</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/89d04f6343.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>MovieZone</span>
+        <br /> What to watch next?
+      </p>
+    </header>
+    
+    <!-- New Search Bar Section -->
+  <div class="search-container">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for movies...">
+      <button id="search-submit" onclick="searchMovies()">Search</button>
+    </div>
+  </div>
+
+    <section class="main-section">
+      <aside id="item-nav">
+        <nav class="main-nav">
+          <a href="#" id="search-btn" class="main-nav-btn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </a>
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa-solid fa-fire"></i> Popular
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> Liked
+          </a>
+          <a href="#" id="recommend-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommend
+          </a>
+        </nav>
+      </aside>
+      
+      <ul id="movie-list">
+        <li class="movie">
+          <img alt="movie poster" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" />
+          <div>
+	      <a class="movie-title" href="#">Movie Title</a>
+	      <div class="movie-details">
+	          <div class="movie-rating">
+	            <i class="fa fa-star"></i>
+	            <p>8.246</p>
+	          </div>
+	          <p class="movie-genre">Genres: Action, Adventure, Science Fiction</p>
+	          <p class="movie-release-date">Release Date: 2018-04-25</p>
+	        <p class="movie-overview">As the Avengers and their allies have continued to protect the world...</p>
+	      </div>
+	    </div>
+	    <div class="fav-link">
+	      <i class="fa fa-heart"></i>
+	    </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>

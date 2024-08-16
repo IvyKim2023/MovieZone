@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url('https://c4.wallpaperflare.com/wallpaper/307/12/896/simple-background-black-background-minimalism-theater-wallpaper-preview.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.top-header {
+  align-items: center;
+  background: #FBAF41;
+  box-shadow: 0px 2px 10px #333333;
+  display: flex;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.avatar {
+  background: #FFFFFF;
+  border-radius: 50%;
+  color: #333C4D;
+  height: 40px;
+  margin-right: 20px;
+  padding-left: 9px;
+  padding-top: 5px;
+  width: 40px;
+}
+
+/* Top navigation */
+.top-nav {
+  flex: 1;
+}
+
+.top-nav a {
+  color: #000000; /* Changed to black */
+  font-weight: bold; /* Make the text bolder */
+  font-size: 20px; /* Make the text larger */
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+
+#welcome-msg {
+  color: #000000;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.container {
+  margin: 60px auto;
+  max-width: 1000px;
+  min-width: 600px; 
+}
+
+.container>header {
+  align-items: center;
+  background: url('http://folkartcarsi.com/img/4.jpg') no-repeat 50% 50%;
+  background-size: 100%;
+  display: flex;
+  height: 250px;
+}
+
+.container>header p {
+  border-left: 1px solid #FFFFFF;
+  font-weight: 400;
+  font-size: 3.5em;
+  line-height: 1em;
+  margin-left: 220px;
+  padding-left: 5px;
+}
+
+.container>header span {
+  color: #FBAF41;
+}
+
+
+#item-nav {
+  float: left;
+  width: 180px;
+}
+
+.nav-icon {
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-nav-btn {
+  background: #F3BB43;
+  border-top: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  display: block;
+  padding: 25px 20px; /* Increase padding for larger buttons */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2em; /* Increase font size */
+  margin: 5px 0;
+}
+
+.main-nav-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #000000;
+}
+
+.main-nav-btn.active {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.main-nav-btn i {
+  width: 20px;
+}
+
+#movie-list {
+  color: #624630;
+  list-style: none;
+  margin-left: 180px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+#movie-list .notice {
+  font-size: 16px;
+  padding: 60px;
+  text-align: center;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 1);
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.movie:last-child {
+  border: none;
+}
+
+
+
+.movie img {
+  border: 1px solid #FFFFFF;
+  height: 250px;
+  width: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie div {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.movie>div:first-of-type {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.movie-title {
+  color: #FBAF41;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.movie-genre, .movie-release-date, .movie-rating p {
+  margin-bottom: 10px;
+  display: block;
+  color: #FFFFFF; /* Ensure child elements have white text */
+  margin-left: 0;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.movie-rating i {
+  margin-right: 5px;
+}
+
+.movie-overview {
+  line-height: 1.5em;
+  padding: 10px 0;
+  text-align: left;
+  margin-left: 0;
+}
+
+
+.stars {
+  display: inline-block;
+}
+
+.fav-link {
+  border-left: 1px solid #FFFFFF;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+  width: 60px;
+}
+
+.fav-link:hover {
+  color: #F13F3F;
+}
+
+
+.search-container {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #FBAF41;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.search-bar button:hover {
+  background-color: #f39c12;
+}
+
+
+footer {
+  background: #434343;
+  font-size: 0.8em;
+  height: 200px;
+  position: relative;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p.title {
+  font-size: 1.2em;
+  padding: 15px;
+}
+
+footer ul {
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
+footer ul li {
+  flex: 1;
+}
+
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #000;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #FBAF41;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.login-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FBAF41;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-container button:hover {
+    background-color: #f39c12;
+}
+

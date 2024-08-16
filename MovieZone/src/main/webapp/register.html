@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Signup</h2>
+        <form id="register-form">
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">register</button>
+        </form>
+        <p id="register-error" style="color:red;"></p>
+        <p>
+           Already have an account? 
+            <a href="login.html">Click here to login.</a>
+        </p>
+    </div>
+    <script src="scripts/register.js"></script>
+</body>
+</html>
