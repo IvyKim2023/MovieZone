@@ -10,6 +10,8 @@ REST API, MySQL, TMDb API, Flask API
 ## **File/Folder Summary**
 
 content-based filtering: a content-based filtering model trained for movie recommendation
+data source: TMDB 5000 Movie Dataset
+https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
 
 ## **Authors and Acknowledgment**
 
