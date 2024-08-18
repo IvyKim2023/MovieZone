@@ -9,7 +9,7 @@ REST API, MySQL, TMDb API, Flask API
 
 ## **File/Folder Summary**
 
-The endpoints are specified in the controller folder.
+content-based filtering: a content-based filtering model trained for movie recommendation
 
 ## **Authors and Acknowledgment**
 
