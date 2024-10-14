@@ -4,7 +4,7 @@
 
 This project is a full-stack project web app movie recommendation system with functionalities including registration, authentication, movie searches by keywords, display of trending movies, and recommendations based on user preferences.
 
-The free tier version of AWS EC2 doesn't have enough space for a collaborate-filtering model of this size. To add this feature, save the model with your current data by running `content-based-model-api.py`, then run `content-based-model-api.py`. Update the TMDB API Key with your own in `MovieZone/src/main/java/api/TMDB_API.java`. 
+The free tier version of AWS EC2 doesn't have enough space for a collaborate-filtering model of this size. To add this feature, save the model with your current data by running `save model.py`, then run `content-based-model-api.py`. Update the TMDB API Key with your own in `MovieZone/src/main/java/api/TMDB_API.java`. 
 
 
 Check out all other features at http://ec2-52-221-205-88.ap-southeast-1.compute.amazonaws.com:8080/MovieZone/ :)
