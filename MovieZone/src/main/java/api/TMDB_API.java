@@ -123,21 +123,7 @@ public class TMDB_API {
 		
 		return new ArrayList<Movie>();
 	}
-	
-	
-//	private void queryAPI(double lat, double lon) {
-//		List<Movie> events = search(lat,lon, null);
-//		try {
-//			for (Movie event : events ) {
-//				System.out.println(event.toJSONObject());
-//			}
-//			
-//		} catch (Exception e) {
-//			e.printStackTrace();	
-//		}
-//		
-//	}
-//	
+		
 	
 	private String getPosterUrl(JSONObject movie) throws JSONException {
 		if (!movie.isNull("poster_path")) {
