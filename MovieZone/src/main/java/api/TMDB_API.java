@@ -22,8 +22,7 @@ import entity.Movie.MovieBuilder;
 
 public class TMDB_API {
 	private static final String URL = "https://api.themoviedb.org/3/";
-//	private static final String DEFAULT_KEYWORD = "";
-	private static final String API_KEY = "783ccf22d1441b9e105a5acf37be5b7c";
+	private static final String API_KEY = ""; // Paste your API Key here
 	
 	public static final Map<Integer, String> genreMap = new HashMap<>();
     static {
@@ -59,10 +58,6 @@ public class TMDB_API {
 			System.out.println("\nSending 'GET' request to URL: " + URL + query);
 			System.out.println("Response code: " + responseCode);
 			
-			if (responseCode != 200) {
-				//
-			}
-			
 			BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 			String inputLine;
 			StringBuilder response = new StringBuilder();
@@ -96,10 +91,6 @@ public class TMDB_API {
 			
 			System.out.println("\nSending 'GET' request to URL: " + URL + query);
 			System.out.println("Response code: " + responseCode);
-			
-			if (responseCode != 200) {
-				//
-			}
 			
 			BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 			String inputLine;
